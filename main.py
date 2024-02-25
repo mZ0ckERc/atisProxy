@@ -20,8 +20,6 @@ async def getMETAR(request: Request):
     lastQueryParams = request.query_params
     finalParams = dict(lastQueryParams).copy()
     finalParams.update(overriddenParams)
-    print(f"https://www.uniatis.net/atis.php?{finalParams}")
-    print(requests.get(f"https://www.uniatis.net/atis.php?{urllib.parse.urlencode(finalParams)}").url)
     uniatisText = requests.get(f"https://www.uniatis.net/atis.php?{urllib.parse.urlencode(finalParams)}").text
     finalText = uniatisText + appendedText
     return finalText
