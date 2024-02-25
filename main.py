@@ -51,6 +51,17 @@ async def getCurrentParams():
         z = overriddenParams.copy()
     return z
 
+@app.get("/setOverridden")
+async def setOverridden(request: Request):
+    global overriddenParams
+    if request.query_params != None:
+        overriddenParams = request.query_params
+    return overriddenParams
+
+@app.get("/getOverridden")
+async def getOverridden():
+    return overriddenParams
+
 @app.get("/test")
 async def text(request: Request):
     return ""
