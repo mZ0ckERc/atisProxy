@@ -8,3 +8,9 @@
 
 
 DER CLI_CLIENT IST NICHT FERTIG!
+
+
+## How to use in Euroscope
+
+In the ATIS dialogue, instead of ``uniatis.net``, put in ``localhost:8000`` (or another port if you've specified one). 
+IMPORTANT: If you use multiple ATISes, each one that needs different parameters (e.g. depfreq if you've overwritten it)
