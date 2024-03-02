@@ -5,3 +5,6 @@
 2. mit `pip -r requirements.txt` die benötigten Pakete installieren
 
 3. mit `uvicorn main:app` den Server starten
+
+
+DER CLI_CLIENT IST NICHT FERTIG!
